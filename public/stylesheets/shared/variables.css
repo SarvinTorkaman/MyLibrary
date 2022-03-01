@@ -1,0 +1,23 @@
+:root {
+  --color-base-hue: 200;
+  --color-danger-hue-offset: 180;
+  --color-danger-hue: calc(
+    var(--color-base-hue) - var(--color-danger-hue-offset)
+  );
+  --color-btn-primary-background-dark: hsl(var(--color-base-hue), 100%, 70%);
+  --color-btn-danger-background-dark: hsl(var(--color-danger-hue), 100%, 70%);
+  --main-font-family: "Balsamiq Sans", cursive;
+  --main-font-size: 20px;
+  --nav-title-font-size: 3rem;
+  --nav-title-font-weight: bold;
+  --nav-link-font-weight: 300;
+  --color-btn-border: black;
+  --color-btn-primary-text: hsl(var(--color-base-hue), 100%, 20%);
+  --color-btn-primary-background: hsl(var(--color-base-hue), 100%, 80%);
+  --color-btn-danger-text: black;
+  --color-btn-danger-background: hsl(var(--color-danger-hue), 100%, 83%);
+
+  --color-background-dark: hsl(var(--color-base-hue), 100%, 15%);
+  --color-background-light: hsl(var(--color-base-hue), 100%, 31%);
+  --color-text-light: hsl(var(--color-base-hue), 100%, 80%);
+}

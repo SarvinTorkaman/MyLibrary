@@ -13,6 +13,14 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+
     <script
       defer
       src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"
@@ -32,7 +40,11 @@
     <title>MyLibrary</title>
   </head>
   <body>
-    <%- include("../partials/header.ejs") %> <%-
-    include("../partials/errorMessage.ejs") %> <%- body %>
+    <div class="container">
+      <%- include("../partials/header.ejs") %>
+      <div class="inner-container">
+        <%- include("../partials/errorMessage.ejs") %> <%- body %>
+      </div>
+    </div>
   </body>
 </html>
