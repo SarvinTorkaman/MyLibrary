@@ -6,5 +6,7 @@
 <div>Description: <%= book.description %></div>
 
 <a href="/authors/<%= book.author.id%>">View Author</a>
-<%- include("../partials/deleteForm",{url:`/books/${book.id}`}) %>
-<a class="btn btn-primary" href="/books/<%= book.id%>/edit"> Edit</a>
+<div class="btn-row">
+  <%- include("../partials/deleteForm",{url:`/books/${book.id}`}) %>
+  <a class="btn btn-primary" href="/books/<%= book.id%>/edit"> Edit</a>
+</div>

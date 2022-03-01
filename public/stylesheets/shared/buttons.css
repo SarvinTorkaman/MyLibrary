@@ -16,6 +16,8 @@
 
 .btn-row > * {
   margin-left: 1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 .btn-row > *:first-child {
   margin-left: 0;
